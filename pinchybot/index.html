@@ -5,16 +5,124 @@
 		<link rel="stylesheet" href="../css/hack.css">
 		<link rel="stylesheet" href="../css/solarized-dark.css">
 	</head>
+	<!--Perhaps a placeholder style, style overrides here-->
+	<style>
+		p,
+		li {
+			color: rgb(180, 180, 180);
+		}
+		.index {
+			padding: 5px;
+		}
+		#navlist a {
+			display: inline;
+			list-style-type: none;
+		}
+	</style>
 	<body class="hack solarized-dark">
 		<div class="container">
-			<div class="cell -3of12 content">
-				<h2>User commands</h2>
-				<ul>
-					<li>
-						<p>list1</p>
-					</li>
-				</ul>
+			<header id="top">
+				<p>Header here, something will go here.. soon&trade;</p>
+			</header>
+			<p>UIs are hard</p>
+			<div class="index">
+				<h1>Index</h1>
+				<a href="#bottom">Bottom of page</a>
+				<p></p>
+				<a href="#usercmds">User commands</a>
+				<li><a href="#ping">$ping</a></li>
+				<li><a href="#reverse">$reverse</a></li>
+				<li><a href="#8ball">$eightball</a></li>
+				<li><a href="#hug">$hug</a></li>
+				<li><a href="#wz">$wz</a></li>
+				<li><a href="#wf">$wf</a></li>
+				<li><a href="#wzadd">$wzadd</a></li>
+				<li><a href="#wzrm">$wzrm</a></li>
+				<li><a href="#pony">$pony</a></li>
+				<li><a href="#dice">$dice</a></li>
+				<li><a href="#cmdlist">$cmdlist</a></li>
+				<li><a href="#epsearch">$epsearch</a></li>
+				<li><a href="#epnext">$epnext</a></li>
+				<li><a href="#timer">$timer</a></li>
+				<li><a href="#ytsearch">$ytsearch</a></li>
+				<li><a href="#pong">$pong</a></li>
+				<li><a href="#svwhen">$svwhen</a></li>
+				<li><a href="#fatcount">$fatcount</a></li>
+				<li><a href="#ship">$ship</a></li>
+				<li><a href="#binary">$binary</a></li>
+				<li><a href="#rolelist">$rolelist</a></li>
+				<li><a href="#candy">$candy</a></li>
+				<li><a href="#svstats">$svstats</a></li>
+				<li><a href="#info">$info</a></li>
+				<li><a href="#calc">$calc</a></li>
 			</div>
+			<!--Start of command list-->
+
+			<h2 id="usercmds">User commands</h2>
+			<p>When a command takes an argument, it will be listed out for those commands in brackets or curly braces. [] are for required arguments, and {} are for optional arguments, <i>do not use the brackets or braces when you type a command argument</i>.</p>
+			<ul>
+				<p id="ping">$ping</p>
+				<li>Ping! Pong! As the command says, this is good for checking if PinchyBot is online and working or not.</li>
+				<p id="reverse">$reverse [argument]</p>
+				<li>Reverses the order of the supplied argument, for example, reversing "Robot" would be "toboR".</li>
+				<p id="8ball">$eightball [question] ($8ball aliases to this)</p>
+				<li>Get a random answer from asking a question, even though the question is merely a placeholder and has no effect on the RNG that determines the answer.</li>
+				<p id="hug">$hug</p>
+				<li>Get hugged by PinchyBot.</li>
+				<p id="wz">$wz {location}</p>
+				<li>Fetches current weather conditions for the location, argument is required if you haven't saved your location (See <a href="#wzadd">$wzadd</a> and <a href="#wzrm">$wzrm</a>). If you're using a location that isn't within the USA or Canada, then you must provide the country name or abbreviation itself (London, UK for example), otherwise state/province names can be used. Do not use just the city name as it can have conflicting names within the search query in some cases. Alerts, if any are present, will be shown alongside the conditions.</li>
+				<p id="wf">$wf {location}</p>
+				<li>Fetches 4 day forecast, take note of argument explaination above.</li>
+				<p id="wzadd">$wzadd [location]</p>
+				<li>Saves the entered location into a database under your unique ID on Discord (Even if you change your name but still be on the same account, PinchyBot will still know it's you) A search query is also run and PinchyBot will warn you if the location could not be found. If you want to change the location that was already saved, just simply issue this command with a new location.</li>
+				<p id="wzrm">$wzrm</p>
+				<li>Removes your location from the database</li>
+				<p id="pony">$pony {query}</p>
+				<li>Fetches a random image from derpibooru based on the query ('cute' tag is searched if argument isn't supplied). NSFW searches by default are filtered out unless allowed for the channel the command is issued in (Will implement a feature for server owners/admins to toggle this sometime soon!)</li>
+				<p id="dice">$dice [XdY]</p>
+				<li>Roll dices! X is the number of dices to roll, Y is how many sides each dice has.</li>
+				<p id="cmdlist">$cmdlist</p>
+				<li>DMs you the link to this page.</li>
+				<p id="epsearch">$epsearch [query]</p>
+				<li>Search for any existing MLP:FiM episodes, outputs the season and episode number as well as the airing date in UTC (Disabled by default due to potential spoilers)</li>
+				<p id="epnext">$epnext</p>
+				<li>Shows the name of the next episode as well as its airtime, may not be available in between season or in-season hiatuses. (Longer than a week between episodes. Like $epsearch, this is disabled by default)</li>
+				<p id="timer">$timer [time]</p>
+				<li>A timer that directly mentions you when the time is up, upper limit is 2 days. Argument examples: 30s, 5m, 15m30s, 2h30m, 4h15m30s</li>
+				<p id="ytsearch">$ytsearch [query]</p>
+				<li>(May be removed as it isn't seeing much use at the moment) Search for a video on youtube.</li>
+				<p id="pong">$pong</p>
+				<li>What happens when the bot dev takes suggestions? This happens.</li>
+				<p id="svwhen">$svwhen</p>
+				<li>Shows when the server was created</li>
+				<p id="fatcount">$fatcount</p>
+				<li>Shows how many times PinchyBot has been called fat, counts are per server</li>
+				<p id="ship">$ship</p>
+				<li>Get shipped with a random currently online user on the server</li>
+				<p id="binary">$binary [argument]</p>
+				<li>Converts the supplied argument to binary, numbers are treated as integers and will have varying bit lengths (EG 12 is 1100 in binary). ASCII characters (or letters if you must) will have each of their 8 bits shown, this includes spaces.</li>
+				<p id="rolelist">$rolelist</p>
+				<li>DMs you the list of roles a server has. Useful for fetching their IDs</li>
+				<p id="candy">$candy</p>
+				<li>This was a meme.. right..?</li>
+				<p id="svstats">$svstats</p>
+				<li>Shows how many servers PinchyBot (and the member count of each server combined) is in</li>
+				<p id="info">$info</p>
+				<li>(<a href="#cmdlist">$cmdlist</a> may be replaced by this) Shows some info including an invite link to its home server and a link to add PinchyBot to a server.</li>
+				<p id="calc">$calc [expression]</p>
+				<li>PinchyBot is suddenly a calcluator, expression must follow proper Python syntax. + Add, - Subtract, can be used for negative numbers, * Multiply, / Divide, ** Exponent, ^ Bitwise XOR (Exclusive OR)</li>
+			</ul>
+			<footer id="bottom">
+				<ul id="navlist">
+					<a href="#top">Top of page</a>
+					<p></p>
+					<a href="https://discord.gg/ghbkpy3">Testing guild (Permanent invite link)</a>
+					<p></p>
+					<a href="https://discordapp.com/oauth2/authorize?client_id=220358361017876482&scope=bot&permissions=0">Add PinchyBot to your server!</a>
+					<p></p>
+					<a href="https://github.com/ZetaRift/zetarift.github.io/blob/master/pinchybot/index.html">Edit on github</a>
+				</ul>
+			</footer>
 		</div>
 	</body>
 </html>
