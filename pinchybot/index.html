@@ -22,9 +22,19 @@
 	<body class="hack solarized-dark">
 		<div class="container">
 			<header id="top">
-				<p>Header here, something will go here.. soon&trade;</p>
+				<h2>The concept</h2>
+				<p>PinchyBot is a multipurpose chat bot solo project that started in 2013 as a way to learn about the Python programming language. Three variants have been written for different chat protocols.</p>
+				<h2>The Discord variant</h2>
+				<p>The Discord version of PinchyBot was initially written in C# in March 2016, but later moved on to Python in order to avoid majorly re-writing most of the side functions it was packed with from the other two variants.</p>
+				<h3>It's a feature!</h3>
+				<li>PinchyBot is loaded with 25 user accessible commands, a list of them including descriptions are below.</li>
+				<p></p>
+				<li>Interaction messages. PinchyBot will react to certain things that are said (Though their name has to be used to avoid false reactions)</li>
+				<h3>Features slated for future development</h3>
+				<li>The ability for server owners and admins to enable or disable certain features</li>
+				<p></p>
+				<li>Reaction based selection on certain commands</li>
 			</header>
-			<p>UIs are hard</p>
 			<div class="index">
 				<h1>Index</h1>
 				<a href="#bottom">Bottom of page</a>
@@ -70,6 +80,7 @@
 				<li>Get a random answer from asking a question, even though the question is merely a placeholder and has no effect on the RNG that determines the answer.</li>
 				<p id="hug">$hug</p>
 				<li>Get hugged by PinchyBot.</li>
+				<p>NOTE: Because PinchyBot is relying on an API that only allows limited calls on a free plan, the weather commands ($wz, $wf, $wzadd, and $wzrm) are only enabled on whitelisted servers. If you want the weather commands enabled on your server, you must ask the bot owner through Discord, preferably on the bot's home guild (See bottom of page). If PinchyBot is in a lot of servers, especially large ones, then I likely won't add any more servers to the whitelist!</p>
 				<p id="wz">$wz {location}</p>
 				<li>Fetches current weather conditions for the location, argument is required if you haven't saved your location (See <a href="#wzadd">$wzadd</a> and <a href="#wzrm">$wzrm</a>). If you're using a location that isn't within the USA or Canada, then you must provide the country name or abbreviation itself (London, UK for example), otherwise state/province names can be used. Do not use just the city name as it can have conflicting names within the search query in some cases. Alerts, if any are present, will be shown alongside the conditions.</li>
 				<p id="wf">$wf {location}</p>
@@ -117,7 +128,7 @@
 				<ul id="navlist">
 					<a href="#top">Top of page</a>
 					<p></p>
-					<a href="https://discord.gg/ghbkpy3">Testing guild (Permanent invite link)</a>
+					<a href="https://discord.gg/ghbkpy3">PinchyBot's home guild (Permanent invite link)</a>
 					<p></p>
 					<a href="https://discordapp.com/oauth2/authorize?client_id=220358361017876482&scope=bot&permissions=0">Add PinchyBot to your server!</a>
 					<p></p>
