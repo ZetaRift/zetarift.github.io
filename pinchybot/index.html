@@ -72,6 +72,9 @@
 				<li><a href="#svstats">$svstats</a></li>
 				<li><a href="#info">$info</a></li>
 				<li><a href="#calc">$calc</a></li>
+				<a href="#svcmds">Server administrator commands</a>
+				<li><a href="#enablensfw">$enablensfw</a></li>
+				<li><a href="#disablensfw">$disablensfw</a></li>
 			</div>
 			<!--Start of command list-->
 
@@ -130,6 +133,14 @@
 				<li>(<a href="#cmdlist">$cmdlist</a> may be replaced by this) Shows some info including an invite link to its home server and a link to add PinchyBot to a server.</li>
 				<p id="calc">$calc [expression]</p>
 				<li>PinchyBot is suddenly a calcluator, expression must follow proper Python syntax. + Add, - Subtract, can be used for negative numbers, * Multiply, / Divide, ** Exponent, ^ Bitwise XOR (Exclusive OR)</li>
+			</ul>
+			<h2 id="svcmds">Server adminstrator commands</h2>
+			<p>(Not to be confused with debug commands which will not be listed here) Commands for toggling features such as NSFW queries on Derpibooru, this feature currently a work in progress.</p>
+			<ul>
+				<p id="enablensfw">$enablensfw</p>
+				<li>Enables NSFW Derpibooru searches for the channel the command is issued in.</li>
+				<p id="disablensfw">$disablensfw</p>
+				<li>Disables NSFW Derpibooru searches for the channel the command is issued in. Do note that NSFW searches are disabled by default.</li>
 			</ul>
 			<footer id="bottom">
 				<ul id="navlist">
