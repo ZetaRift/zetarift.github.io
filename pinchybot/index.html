@@ -31,6 +31,9 @@
 		.tab {
 			margin-left: 20px;
 		}
+		.cdesc, p {
+			margin-left: 20px;
+		}
 		/*
 		p,
 		li {
@@ -109,7 +112,7 @@
 			<h3 id="usercmds">User commands</h3>
 			<p>When a command takes an argument, it will be listed out for those commands in brackets or curly braces. [] are for required arguments, and {} are for optional arguments, <i>do not use the brackets or braces when you type a command argument</i>.</p>
 			<p>If the command you're wanting to use isn't on this page, then it likely isn't in the bot's code as each one of its commands excluding developer commands will be documented here.</p>
-			<ul>
+			<ul class="cdesc">
 				<li id="ping">$ping</li>
 				<p>Ping! Pong! As the command says, this is good for checking if PinchyBot is online and working or not.</p>
 				<li id="reverse">$reverse [argument]</li>
@@ -180,7 +183,7 @@
 			<h3 id="svcmds">Server adminstrator commands</h3>
 			<p>(Not to be confused with debug commands which will not be listed here) Commands for toggling features such as NSFW queries on Derpibooru, this feature currently a work in progress.</p>
 			<p>The commands listed below are restricted to those with the Manage Server permission. (Server owners count as they override every permission regardless of role)</p>
-			<ul>
+			<ul class="cdesc">
 				<li id="enablensfw">$enablensfw</li>
 				<p>Enables NSFW Derpibooru searches for the channel the command is issued in.</p>
 				<li id="disablensfw">$disablensfw</li>
