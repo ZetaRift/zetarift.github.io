@@ -101,10 +101,12 @@
 					<li><a href="#tf">$tf</a></li>
 					<li><a href="#tk">$tk</a></li>
 				</div>
-				<a href="#svcmds">Server administrator commands</a>
+				<a href="#svcmds">Server configuration commands</a>
 				<div class="tab">
 					<li><a href="#enablensfw">$enablensfw</a></li>
 					<li><a href="#disablensfw">$disablensfw</a></li>
+					<li><a href="#ignore">$ignore</a></li>
+					<li><a href="#unignore">$unignore</a></li>
 				</div>
 			</div>
 			<!--Start of command list-->
@@ -180,14 +182,17 @@
 				<li id="tk">$tk [temperature]</li>
 				<p>Converts Kelvin to Fahrenheit and Celsius</p>
 			</ul>
-			<h3 id="svcmds">Server adminstrator commands</h3>
-			<p>(Not to be confused with debug commands which will not be listed here) Commands for toggling features such as NSFW queries on Derpibooru, this feature currently a work in progress.</p>
-			<p>The commands listed below are restricted to those with the Manage Server permission. (Server owners count as they override every permission regardless of role)</p>
+			<h3 id="svcmds">Server configuration commands</h3>
+			<p>(Not to be confused with debug commands which will not be listed here) Commands that enable or disable certain features on the server, these are restricted to certain permissions</p>
 			<ul class="cdesc">
 				<li id="enablensfw">$enablensfw</li>
-				<p>Enables NSFW Derpibooru searches for the channel the command is issued in.</p>
+				<p>(Manage Server) Enables NSFW Derpibooru searches for the channel the command is issued in.</p>
 				<li id="disablensfw">$disablensfw</li>
-				<p>Disables NSFW Derpibooru searches for the channel the command is issued in. Do note that NSFW searches are disabled by default.</p>
+				<p>(Manage Server) Disables NSFW Derpibooru searches for the channel the command is issued in. Do note that NSFW searches are disabled by default.</p>
+				<li id="ignore">$ignore</li>
+				<p>(Manage Channel) Ignores the targeted channel, any user commands issued are ignored, same applies for any bot interaction. Server configuration commands are extempt from this.</p>
+				<li id="unignore">$unignore</li>
+				<p>(Manage Channel) Unignores the targeted channel, any given channels by default are not ignored</p>
 			</ul>
 			<footer id="bottom">
 				<ul id="navlist">
