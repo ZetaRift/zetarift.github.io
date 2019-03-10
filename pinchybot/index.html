@@ -126,7 +126,7 @@
 				<li id="wz">$wz {location}</li>
 				<p>NOTE: Because PinchyBot is relying on an API that only allows limited calls on a free plan, the weather commands ($wz, $wf, $wzadd, and $wzrm) are only enabled on whitelisted servers. If you want the weather commands enabled on your server, you must ask the bot owner through Discord, preferably on the bot's home guild (See bottom of page). If PinchyBot is in a lot of servers, especially large ones, then I likely won't add any more servers to the whitelist!</p>
 				<p>Fetches current weather conditions for the location, argument is required if you haven't saved your location (See <a href="#wzadd">$wzadd</a> and <a href="#wzrm">$wzrm</a>). If you're using a location that isn't within the USA or Canada, then you must provide the country name or abbreviation itself (London, UK for example), otherwise state/province names can be used. Do not use just the city name as it can have conflicting names within the search query in some cases. Alerts, if any are present, will be shown alongside the conditions.</p>
-				<p>End of service notice: Weather Underground may retire its API after December 31, 2018, other API options are currently being looked at</p>
+				<p>End of service notice: Weather Underground has shut down its API services, therefore rendering the weather commands useless. Those commands are disabled until further notice</p>
 				<li id="wf">$wf {location}</li>
 				<p>Fetches 4 day forecast, take note of argument explaination above.</p>
 				<li id="wzadd">$wzadd [location]</li>
@@ -166,7 +166,8 @@
 				<li id="info">$info</li>
 				<p>(<a href="#cmdlist">$cmdlist</a> may be replaced by this) Shows some info including an invite link to its home server and a link to add PinchyBot to a server.</p>
 				<li id="calc">$calc [expression]</li>
-				<p>PinchyBot is suddenly a calcluator, expression must follow proper Python syntax (except for exponent). + Add, - Subtract, can be used for negative numbers, * Multiply, / Divide, ^ Exponent</p>
+				<p>PinchyBot is suddenly a calcluator, expression must follow proper Python syntax (except for exponent). + Add, - Subtract, can also be used for negative numbers, * Multiply, / Divide, ^ Exponent</p>
+				<p>See the <a href="https://docs.python.org/3/library/math.html" target="_blank">Python 3 math module</a> for more info</p>
 				<li id="dechex">$dectohex [int]</li>
 				<p>Converts decimal to hexadecimal</p>
 				<li id="hexdec">$hextodec [hex]</li>
