@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="title" content="PinchyBot!">
@@ -13,41 +13,45 @@
 		<link rel="stylesheet" href="../css/hack.css">
 		-->
 		<link rel="stylesheet" href="../css/solarized-dark.css">
-	</head>
-	<!--Perhaps a placeholder style, style overrides here-->
+			<!--Perhaps a placeholder style, style overrides here-->
 
-	<style>
-		a {
-			color: #00CCCC;
-		}
-		p {
-			color: #AFAFAF;
-			padding-bottom: 15px;
-		}
-		li {
-			padding-bottom: 5px;
-			color: #B0B0B0;
-		}
-		.tab {
-			margin-left: 20px;
-		}
-		.cdesc, p {
-			margin-left: 20px;
-		}
-		/*
-		p,
-		li {
-			color: rgb(180, 180, 180);
-		}
-		.index {
-			padding: 5px;
-		}
-		*/
-		#navlist a {
-			display: inline;
-			list-style-type: none;
-		}
-	</style>
+		<style>
+			a {
+				color: #00CCCC;
+			}
+			p {
+				color: #AFAFAF;
+				padding-bottom: 15px;
+			}
+			li {
+				padding-bottom: 5px;
+				color: #B0B0B0;
+			}
+			.tab {
+				margin-left: 20px;
+			}
+			.cdesc, ul{
+				color:#AFAFAF !important;
+			}
+			.cdesc, p {
+				margin-left: 20px;
+			}
+			/*
+			p,
+			li {
+				color: rgb(180, 180, 180);
+			}
+			.index {
+				padding: 5px;
+			}
+			*/
+			#navlist a {
+				display: inline;
+				list-style-type: none;
+			}
+		</style>
+
+	</head>
 	<body class="hack solarized-dark">
 		<div class="container">
 			<header id="top">
@@ -70,7 +74,7 @@
 				<a href="#bottom">Bottom of page</a>
 				<p></p>
 				<a href="#usercmds">User commands</a>
-				<div class="tab">
+				<ul class="tab">
 					<li><a href="#ping">$ping</a></li>
 					<li><a href="#reverse">$reverse</a></li>
 					<li><a href="#8ball">$eightball</a></li>
@@ -103,22 +107,22 @@
 					<li><a href="#tc">$tc</a></li>
 					<li><a href="#tf">$tf</a></li>
 					<li><a href="#tk">$tk</a></li>
-				</div>
+				</ul>
 				<a href="#svcmds">Server configuration commands</a>
-				<div class="tab">
+				<ul class="tab">
 					<li><a href="#enablensfw">$enablensfw</a></li>
 					<li><a href="#disablensfw">$disablensfw</a></li>
 					<li><a href="#ignore">$ignore</a></li>
 					<li><a href="#unignore">$unignore</a></li>
-				</div>
+				</ul>
 			</div>
 			<!--Start of command list-->
 
 			<h3 id="usercmds">User commands</h3>
 			<p>When a command takes an argument, it will be listed out for those commands in brackets or curly braces. [] are for required arguments, and {} are for optional arguments, <i>do not use the brackets or braces when you type a command argument</i>.</p>
 			<p>If the command you're wanting to use isn't on this page, then it likely isn't in the bot's code as each one of its commands excluding developer commands will be documented here.</p>
-			<ul class="cdesc">
-				<li id="ping">$ping</li>
+			<div class="cdesc">
+				<ul id="ping">$ping</ul>
 				<p>Ping! Pong! As the command says, this is good for checking if PinchyBot is online and working or not.</p>
 
 				<li id="reverse">$reverse [argument]</li>
@@ -216,7 +220,7 @@
 
 				<li id="tk">$tk [temperature]</li>
 				<p>Converts Kelvin to Fahrenheit and Celsius</p>
-			</ul>
+			</div>
 			<h3 id="svcmds">Server configuration commands</h3>
 			<p>(Not to be confused with debug commands which will not be listed here) Commands that enable or disable certain features on the server, these are restricted to certain permissions</p>
 			<ul class="cdesc">
@@ -235,8 +239,6 @@
 			<footer id="bottom">
 				<ul id="navlist">
 					<a href="#top">Top of page</a>
-					<p></p>
-					<a href="https://discord.gg/ghbkpy3">PinchyBot's home guild (Permanent invite link)</a>
 					<p></p>
 					<a href="https://discordapp.com/oauth2/authorize?client_id=220358361017876482&scope=bot&permissions=0">Add PinchyBot to your server!</a>
 					<p></p>
